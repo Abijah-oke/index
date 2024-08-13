@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM collections</title>
+    <!-- <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="bs/js/bootstrap.min.js"></script>  -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="Images/dmicon.jpg">
+     <style>
+        body{
+            box-sizing: border-box;
+        }
+        ul{
+            list-style-type: none;
+            background-color: rgb(250, 157, 214);
+              min-height: 110px;  
+        }
+        li{
+             float: right;
+            color: black;
+             margin: 18px; 
+            font-family: Arial, Helvetica, sans-serif;
+              padding-top: 20px; 
+              font-size: 20px;
+              font-weight: 500;
+        } 
+        a:link{ 
+           text-decoration: none;  
+        }
+        a:visited{
+            color:dimgray;
+        }
+        a:hover{
+            color: darkslateblue;
+            font-weight: bolder;
+        }
+        a:active{
+            color:darkblue
+        }
+        li:first-child{
+            float: left; 
+            font-size: 35px;
+        }
+       
+         span{
+            font-style: italic;
+            font-size: 22px;
+        } 
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             min-height:  650px; 
+            background-image: url("images/images.scruncies.jpg");
+            background-repeat: no-repeat ;
+            background-size: cover;  
+            margin-top: -15.5px;   
+        }
+      .bannerTitle{
+             font-size: 4rem;
+             font-weight: bolder;
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             text-align: center;
+        }
+    
+        footer{
+            background-color: black;
+            color: white;
+            height: 230px;
+            padding: 30px;
+            margin-top: 3px;
+         } 
+
+            table{
+          width: 80vh;
+          margin: 0 auto;
+          overflow: hidden;
+          white-space: nowrap;
+          margin-bottom: 20px;
+        }
+       td{
+        width: 30px;
+       }
+        th{
+          text-decoration: overline;
+          text-decoration-color: rgb(164, 245, 245);
+        }
+        @media screen and (max-width:740px){
+            ul{
+              display: flex;
+            flex-flow: column-reverse nowrap;
+            margin: 0;
+            padding: 0;
+            }
+            a{
+                display: block;
+                padding:  10px;
+                margin: 0;
+                color: black;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: black;
+                 text-transform: uppercase;
+            }
+            li{
+                 margin: 10px;  
+                 padding: 0px; 
+                font-weight: bold;
+            } 
+        table{
+          width: 100%; 
+          margin-bottom: 20px;
+        }
+        .bannerTitle{
+            font-size: 3rem;
+        }
+        li:first-child{
+             align-self: center; 
+             display: none; 
+        }
+         .rounded-circle{
+             margin: 60px auto !important;
+             width: 22% !important;
+        } 
+         .csecond{
+          width: 13% !important;
+        } 
+        .carousel-caption{
+            display: inline-block !important;
+        }
+        .carousel-item{
+            min-height: 40vh !important ;
+        }
+       
+        }
+        @media screen and (max-width:341px){
+            .rounded-circle{
+               display: none !important;
+            }
+            .carousel-indicators{
+            display: none;
+        }
+        }
+        @media screen and (min-width:741px) and (max-width:1100px){
+          .carousel-caption{
+            display: inline-block !important;
+        }
+        .carousel-item{
+            min-height: 40vh !important ;
+        }  .rounded-circle{
+            margin: 50px auto !important;
+        }
+        .csecond{
+          width: 10% !important;
+        } 
+        }
+        @media screen and (min-width:1101px) and (max-width:1400px){
+        .carousel-caption{
+        display: inline-block !important;
+        }
+         .carousel-item{
+       min-height: 40vh !important ;
+        }  
+         .rounded-circle{
+        margin: 30px auto !important;
+        }
+        .cfirst{
+        margin: 30px auto !important;
+        }
+         /* .csecond{
+          width: 8rem !important;
+        }  */
+         /* .cthird{
+          margin: 100px auto !important;
+        }  */
+        }
+         @media screen and (min-width:1401px)  {
+    .rounded-circle{
+            margin: 50px auto !important;
+        }
+        .carousel-item{
+       min-height: 40vh !important ;
+        }  
+        .csecond{
+          width: 7% !important;
+        }  
+         .cthird{
+          width: 9rem !important;
+          padding-top: 0.2rem;
+        }
+        }
+          .rela{
+          position: fixed;
+          right: 25px;
+          top :370px; 
+          color: black;  
+        
+        }  
+        .arrow{
+           position:absolute;
+           right:19px;    
+        }
+        .waplink{
+          color: black;
+        }
+        .waplink:hover{
+          font-weight: bold;
+        }
+    </style>  
+    
+</head>
+<body>
+  <div class="rela">
+    <a href="https://wa.me/+2348104520150">
+      <i class="bi bi-whatsapp"  style="font-size:60px; color:green"></i>
+     <p class="waplink">Contact us on Whatsapp</p>  
+  </a>
+   </div>
+      <nav>
+     <ul>
+        <li class="first"> DM<span>collections </span></li>
+        <li><a href="products.html" target="_blank"> Products </a></li>
+         <li><a href="about.html"> About </a></li>
+         <li><a href="Index.html"> Home </a></li>
+       </ul>
+      </nav>
+     <main>
+          <div class="banner">
+            <div class="bannerTitle">
+                 <p class="p">Hair care,Self care </p>
+            </div>
+              </div>
+
+              <div id="carouselExampleCaptions" class="carousel slide carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active" >   
+                    <img src="Images/IMG-20230816-WA0004.jpg"  class=" cfirst rounded-circle img-fluid  d-block " style="height:30%; width:8rem;" alt="...">       
+            
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bolorunduro dami</h5>
+                      <p>The bow is very comfortable,not tight, I love itt.</p>
+                    </div>
+                   </div>
+        
+                  <div class="carousel-item" >
+                     <!-- <img src="images/IMG-20230816-WA0006.jpg" class=" csecond rounded-circle img-fluid d-block " style="height:30%; width:5rem; "  alt="...">  -->
+                     <img src="images/images (28).jpeg" class=" csecond rounded-circle img-fluid d-block " style="height:30%; width:5rem; "  alt="..."> 
+         
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Olapade Hannah</h5>
+                      <p>I love it , it's actually very nice.</p>
+                    </div>
+                  </div>
+        
+                  <div class="carousel-item">
+                    <img src="Images/images (30).2.jpg" class=" cthird rounded-circle img-fluid  d-block "  style="height:30%;width:8rem; "  alt="...">
+                    <div class=" carousel-caption d-none d-md-block">
+                      <h5> Ogundipe Salem</h5>
+                      <p>Dm collections you do this one oo</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target=" #carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+</main>
+
+<footer style="text-align: center;">
+     
+
+  <a href=""  id="nav" class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg> 
+      </a>
+
+      <table> 
+        <tr>
+          <th>SERVICES</th>
+          <th>PRODUCTS</th>
+          <th>SOCIALS</th>
+        </tr>
+        <tr>
+          <td>Styling tips</td>
+          <td>Scrunchies</td>
+          <td>Facebook</td>
+        </tr>
+
+        <tr>
+          <td>Delivery</td>
+          <td>Headbands</td>
+         
+          <td>Instagram</td>
+        </tr>
+
+        <tr>
+         
+          <td>Haircare</td>
+          <td>Hairbows</td>
+          <td>Whatsapp</td>
+        </tr>
+        <tr>
+          <td>Pickup</td>
+          <td>Bonnets</td>
+          <td>Pinterest</td>
+        </tr>
+
+      </table>
+      &copy; DMcollections 2023
+      <img src="images/dmicon.jpg" alt="" style="width: 50px;">
+</footer>
+
+</body>
+</html>
